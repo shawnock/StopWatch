@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shawnocked.stopwatch.mainFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/counter_size"
+            android:background="@color/counter_background"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/start"
+                style="@style/button_style"
+                android:text="@string/start"
+                android:layout_marginRight="@dimen/start_button_rigth_margin"
+                />
+
+            <Button
+                android:id="@+id/reset"
+                style="@style/button_style"
+                android:text="@string/reset"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
